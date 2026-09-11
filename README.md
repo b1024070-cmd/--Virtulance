@@ -98,9 +98,9 @@ flutter pub get
 flutter run
 ```
 
-> **Note:** `pubspec.yaml`はGitHubにプロジェクト一式が残っていなかったため、
-> 各Dartファイルのimport文から使用パッケージを復元して作成しています。
-> パッケージのバージョン番号は当時と完全には一致しない可能性があるため、
+> **Note:** `pubspec.yaml`は当時実際に使っていたファイルが見つかったため、それをベースにしています。
+> ただし元のファイルには`firebase_core` / `firebase_auth` / `cloud_firestore` / `firebase_storage`の記載がなく、
+> コードは実際にこれらをimportして使用しているため、この4パッケージのみバージョンを推測して追記しています。
 > `flutter pub get`実行時にバージョン解決エラーが出た場合は適宜調整してください。
 
 ## 開発の背景について
