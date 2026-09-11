@@ -1,0 +1,41 @@
+name: virtulance
+description: "「徳を積む」行動と収支を記録・可視化・共有できるSNSアプリ(P2HACKS2025 ハッカソン制作)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+# NOTE:
+# このpubspec.yamlは、GitHubに残っていなかったため、
+# 各Dartファイルのimport文から使用パッケージを復元して作成したものです。
+# バージョン番号(^x.x.x)は当時実際に使っていたものと一致しない可能性があるため、
+# 実行する際は `flutter pub get` 後にバージョン解決エラーが出ないか確認してください。
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^2.24.0
+  firebase_auth: ^4.15.0
+  cloud_firestore: ^4.13.0
+  firebase_storage: ^11.5.0
+
+  # ローカル保存・端末機能
+  shared_preferences: ^2.2.2
+  path_provider: ^2.1.1
+  image_picker: ^1.0.4
+
+  # グラフ表示(グラフ画面で使用)
+  fl_chart: ^0.66.0
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
